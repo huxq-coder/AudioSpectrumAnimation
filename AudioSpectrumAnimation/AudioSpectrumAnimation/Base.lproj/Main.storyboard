@@ -42,7 +42,7 @@
                                         <state key="normal" title="开始">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <state key="selected" title="停止"/>
+                                        <state key="selected" title="暂停"/>
                                         <connections>
                                             <action selector="audioButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKc-YQ-yCB"/>
                                         </connections>

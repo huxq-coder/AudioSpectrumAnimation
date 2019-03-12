@@ -7,20 +7,18 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
-    
-    private let engine = AVAudioEngine()
-    private let player = AVAudioPlayerNode()
 
+    private let player = AudioPlayer()
+    
     @IBOutlet weak var audioNameLabel: UILabel!
     
     @IBAction func audioButton(_ sender: UIButton) {
         if !sender.isSelected {
-            self.paly(fileName: audioNameLabel.text!)
+            player.play(fileName: audioNameLabel.text!)
         } else {
-            self.stop()
+            player.pause()
         }
         
         sender.isSelected = !sender.isSelected
@@ -32,30 +30,6 @@ class ViewController: UIViewController {
         let audioNamePath = Bundle.main.paths(forResourcesOfType: "mp3", inDirectory: nil).last
         let audioName = audioNamePath?.components(separatedBy: "/").last
         audioNameLabel.text = audioName
-        // 初始化
-        engine.attach(player)
-        engine.connect(player, to: engine.mainMixerNode, format: nil)
-        engine.prepare()
-        try! engine.start()
-        
-    }
-
-    
-    /// 播放
-    ///
-    /// - Parameter fileName: 音频名称
-    func paly(fileName: String) {
-        let audioFileURL = Bundle.main.url(forResource: fileName, withExtension: nil)
-        let audioFile = try? AVAudioFile(forReading: audioFileURL!)
-        player.scheduleFile(audioFile!, at: nil, completionHandler: nil)
-        player.play()
-        
-    }
-    
-    
-    /// 停止播放
-    func stop() {
-        player.stop()
     }
     
 

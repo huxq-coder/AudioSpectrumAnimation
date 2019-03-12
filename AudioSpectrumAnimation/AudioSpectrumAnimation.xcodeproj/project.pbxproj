@@ -13,6 +13,7 @@
 		849ACB152237800D00DC7C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849ACB142237800D00DC7C6C /* Assets.xcassets */; };
 		849ACB182237800D00DC7C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849ACB162237800D00DC7C6C /* LaunchScreen.storyboard */; };
 		849ACB20223780F600DC7C6C /* 被遗忘的时光.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 849ACB1F223780F600DC7C6C /* 被遗忘的时光.mp3 */; };
+		849ACB2222378D0800DC7C6C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ACB2122378D0800DC7C6C /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		849ACB172237800D00DC7C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849ACB192237800D00DC7C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849ACB1F223780F600DC7C6C /* 被遗忘的时光.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "被遗忘的时光.mp3"; sourceTree = "<group>"; };
+		849ACB2122378D0800DC7C6C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				849ACB142237800D00DC7C6C /* Assets.xcassets */,
 				849ACB162237800D00DC7C6C /* LaunchScreen.storyboard */,
 				849ACB192237800D00DC7C6C /* Info.plist */,
+				849ACB2122378D0800DC7C6C /* AudioPlayer.swift */,
 			);
 			path = AudioSpectrumAnimation;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				849ACB102237800C00DC7C6C /* ViewController.swift in Sources */,
 				849ACB0E2237800C00DC7C6C /* AppDelegate.swift in Sources */,
+				849ACB2222378D0800DC7C6C /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
